@@ -1212,4 +1212,10 @@ input[type="number"] {
     background: #fff;
     padding: 50px 30px 70px;
     margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.recipe-ingredient-block>div {
+    width: 50%;
 }
