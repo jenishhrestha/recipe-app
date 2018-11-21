@@ -114,7 +114,7 @@ a {
 }
 
 .btn-inline {
-    color: #F59A83;
+    color: #e57920;
     font-size: 1.2rem;
     border: none;
     background-color: #F9F5F3;
@@ -904,7 +904,7 @@ body.search-open .btn-search span.search-close-icon {
     margin-bottom: 24px;
 }
 
-.recipe-lists {
+.page-wrapper {
     font-size: 15px;
 }
 
@@ -1120,9 +1120,96 @@ body.search-open .btn-search span.search-close-icon {
     background: #fff;
     margin-top: 30px;
     border: 1px solid #f2eee5;
+    font-family: 'Francois One', sans-serif;
 }
 
 .recipe-overview>div {
     flex-basis: 50%;
     max-width: 50%;
+}
+
+.recipe-info {
+    color: #000;
+}
+
+.recipe-overview_content {
+    max-width: 250px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.info-box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.info-box>div {
+    width: 50%;
+    display: inline-flex;
+    font-size: 13px;
+    align-items: center;
+    letter-spacing: 0.1em;
+    border-bottom: 1px solid #dcd6cc;
+    padding: 12px 0;
+    justify-content: center;
+}
+
+.info-box>div:last-child {
+    border-left: 1px solid #dcd6cc;
+}
+
+.info-box>div svg {
+    width: 15px;
+    height: 15px;
+}
+
+input[type="number"] {
+    height: 32px;
+    width: 70px;
+    padding: 7px;
+    margin-bottom: 30px;
+}
+
+.add-to-cart .btn-small.recipe__btn {
+    display: inline-flex;
+    background: #f2eee5;
+    position: relative;
+    overflow: hidden;
+}
+
+.add-to-cart .btn-small.recipe__btn svg,
+.add-to-cart .btn-small.recipe__btn span {
+    position: relative;
+    z-index: 2;
+    color: #000;
+    fill: #000;
+}
+
+.add-to-cart .btn-small.recipe__btn:before {
+    content: "";
+    background: #fdc282;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    transform: translateY(150%);
+    transition: all .6s cubic-bezier(.4, 0, 0, 1);
+}
+
+.add-to-cart .btn-small.recipe__btn:hover:before {
+    transform: translateY(0);
+}
+
+.recipe-ingredient-block {
+    background: #fff;
+    padding: 50px 30px 70px;
+    margin-top: 50px;
 }
